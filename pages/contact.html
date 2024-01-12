@@ -6,20 +6,76 @@
     <title>Contact The Barber Shop</title>
   </head>
   <body>
-    <h>
+    <div>
       <nav align="center">
-        <a href="index.html">Home |</a>
-        <a href="./pages/about.html"> About |</a>
-        <a href="./pages/contact.html"> Contact</a>
+        <a href="../index.html">Home |</a>
+        <a href="./about.html"> About |</a>
+        <a href="./contact.html"> Contact |</a>
+        <a href="./reservations.html"> Reservations</a>
       </nav>
       <h2 align="center">Contact the Barber Shop</h2>
       <img
-        src="./assets/logo.png"
+        src="../assets/logo.png"
         alt="barbershop"
         height="250px"
         style="display: block; margin: 0 auto"
       />
-    </h>
+    </div>
+    <div>
+      <h3 align="center">Contact Us</h3>
+      <h4 align="center">555-555-5555</h4>
+      <h4 align="center">123 E Main St, Vernal, UT 84078</h4>
+      <form action="/submit-contact" method="POST" align="center">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <hr />
+    <div>
+      <h3 align="center">Hours</h3>
+      <table style="margin: 0 auto">
+        <tr>
+          <th>Barber</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>9am - 5pm</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>9am - 5pm</td>
+        </tr>
+        <tr>
+          <td>Frank</td>
+          <td>9am - 5pm</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.8544941444743!2d-109.5288968244813!3d40.45635735322726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87456235f2812179%3A0xec76ff73ff649d1c!2s123%20E%20Main%20St%2C%20Vernal%2C%20UT%2084078!5e0!3m2!1sen!2sus!4v1705102040422!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0; margin: 0 auto"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div>
+      <h3 align="center">The best barber shop experience</h3>
+      <footer>
+        <p align="center">The Barber Shop &copy; 2024</p>
+      </footer>
+    </div>
   </body>
 </html>
